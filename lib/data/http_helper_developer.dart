@@ -6,7 +6,7 @@ import 'package:recruitech_flutter/data/developer.dart';
 
 class HttpHelper {
   final String urlBase =
-      'https://backend-recruitech-production.up.railway.app/api/v1';
+      'https://backend-recruitech-production.up.railway.app/api/v1/developers';
 
   Future<Developer?> getDevelopers(id) async {
     http.Response response = await http.get(Uri.parse('$urlBase/$id'));
