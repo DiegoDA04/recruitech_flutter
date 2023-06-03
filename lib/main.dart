@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recruitech_flutter/ui/login_screen.dart';
-import 'package:recruitech_flutter/ui/channel.dart'
+import 'package:recruitech_flutter/ui/channel.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,9 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Scaffold(
-        body: ChannelScreen()
-      ),
+      home: Scaffold(body: ChannelScreen()),
     );
   }
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lorem/lorem.dart';
+import 'package:flutter_lorem/flutter_lorem.dart';
 
 class ChatScreen extends StatefulWidget {
   final String contactName;
