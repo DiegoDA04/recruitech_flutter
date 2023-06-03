@@ -5,7 +5,7 @@ class Developer {
   final String firstName;
   final String lastName;
   final String description;
-  final User user;
+  User user;
 
   Developer(
       {required this.id,

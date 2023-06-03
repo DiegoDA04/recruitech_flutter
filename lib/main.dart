@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:recruitech_flutter/screens/profile.dart';
 import 'package:recruitech_flutter/ui/login_screen.dart';
+import 'package:recruitech_flutter/ui/channel.dart';
 
 void main() {
   runApp(const MyApp());
