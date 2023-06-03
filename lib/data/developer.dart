@@ -1,24 +1,21 @@
-import 'package:recruitech_flutter/data/user.dart';
-
 class Developer {
-  final int id;
-  final String firstName;
-  final String lastName;
-  final String description;
-  User user;
+  final int? id;
+  final String? firstName;
+  final String? lastName;
+  final String? description;
 
-  Developer(
-      {required this.id,
-      required this.firstName,
-      required this.lastName,
-      required this.description,
-      required this.user});
+  Developer({
+    this.id,
+    this.firstName,
+    this.lastName,
+    this.description,
+  });
 
   Developer.fromJson(Map<String, dynamic> json)
       : this(
-            id: json['id'],
-            firstName: json['firstName'],
-            lastName: json['lastName'],
-            description: json['description'],
-            user: json['user']);
+          id: json['id'],
+          firstName: json['firstName'],
+          lastName: json['lastName'],
+          description: json['description'],
+        );
 }

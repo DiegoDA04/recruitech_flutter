@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:recruitech_flutter/data/developer.dart';
 import 'package:recruitech_flutter/data/http_helper_developer.dart';
@@ -10,9 +12,9 @@ class Profile extends StatefulWidget {
 }
 
 class _ProfileState extends State<Profile> {
-  HttpHelper? httpHelper;
+  HttpHelperDeveloper? httpHelper;
   Developer? developer;
-  String? id;
+  Long? id;
 
   Future initialize() async {
     developer = await httpHelper?.getDevelopers(id);
@@ -22,19 +24,26 @@ class _ProfileState extends State<Profile> {
   }
 
   @override
+  void initState() {
+    httpHelper = HttpHelperDeveloper();
+    initialize();
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
         title: const Text('Profile'),
         subtitle: Column(
           children: [
-            Text(developer!.firstName),
-            Text(developer!.lastName),
+            Text("Diego"),
+            Text("Velasquez"),
           ],
         ),
         leading: Column(
           children: [
-            Text(developer!.description),
+            Text("Hola soy un desarrollador Móvil"),
           ],
         ),
       ),

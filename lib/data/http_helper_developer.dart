@@ -4,7 +4,7 @@ import 'dart:io';
 import 'package:http/http.dart' as http;
 import 'package:recruitech_flutter/data/developer.dart';
 
-class HttpHelper {
+class HttpHelperDeveloper {
   final String urlBase =
       'https://backend-recruitech-production.up.railway.app/api/v1/developers';
 
@@ -15,8 +15,7 @@ class HttpHelper {
       final jsonResponse = json.decode(response.body);
       Developer developer = Developer.fromJson(jsonResponse);
       return developer;
-    } else {
-      return null;
     }
+    return null;
   }
 }

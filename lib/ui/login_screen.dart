@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recruitech_flutter/data/http_helper.dart';
 import 'package:recruitech_flutter/data/login_class/login_request.dart';
-import 'package:recruitech_flutter/data/login_class/login_response.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
