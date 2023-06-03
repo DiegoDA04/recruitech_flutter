@@ -6,4 +6,7 @@ class Company {
   final User user;
 
   Company({required this.id, required this.name, required this.user});
+
+  Company.fromJson(Map<String, dynamic> json)
+      : this(id: json['id'], name: json['name'], user: json['user']);
 }

@@ -16,4 +16,13 @@ class User {
       required this.password,
       required this.developer,
       required this.company});
+
+  User.fromJson(Map<String, dynamic> json)
+      : this(
+            id: json['id'],
+            username: json['username'],
+            email: json['email'],
+            password: json['password'],
+            developer: json['developer'],
+            company: json['company']);
 }
