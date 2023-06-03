@@ -34,6 +34,18 @@ class _LoginState extends State<Login> {
       children: [
         Padding(
           padding: const EdgeInsets.all(8.0),
+          child: SizedBox(
+            child: 
+            Column(
+              children: [
+                Image.asset("lib/assets/recruitech_logo.png", width: 126, height: 128),
+                const Text("Sign in to your account", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
+              ],
+            )
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
           child: TextFormField(
             controller: TextEditingController(text: email),
             decoration: const InputDecoration(
@@ -83,6 +95,9 @@ class _LoginState extends State<Login> {
               if(response != null) {
                 ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(content: Text('Logged!!!')));
+                /* Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  JobsScreen();
+                },)); */
               } else {
                 ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(content: Text('Something is wrong!!!')));
