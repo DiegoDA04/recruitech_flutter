@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recruitech_flutter/ui/login_screen.dart';
+import 'package:recruitech_flutter/ui/channel.dart'
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const Scaffold(
-        body: Login()
+        body: ChannelScreen()
       ),
     );
   }
