@@ -11,6 +11,10 @@ class ChannelScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    //init value of search bar
+    String searchValue = '';
+
     return Scaffold(
       appBar: AppBar(
         //center title in appbar , appbar height is 56
