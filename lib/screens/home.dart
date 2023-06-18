@@ -34,6 +34,11 @@ class _HomeState extends State<Home> {
           ],
         ),
         const Text('Recommend For you'),
+        Column(
+          children: [
+            Text(job!.title),
+          ],
+        ),
       ],
     );
   }
